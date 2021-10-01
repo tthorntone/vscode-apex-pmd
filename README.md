@@ -1,3 +1,22 @@
+# tthorntone
+Added support for java.
+
+1. Download the latest zip here: https://github.com/pmd/pmd/releases
+2. Copy just the pmd-java-*.jar to it's own directory somewhere outside your project
+3. Update your workspace VS Code settings to include:
+```
+{
+  "apexPMD.rulesets": ["PROJECT-PATH/pmdrules.xml"],
+  "apexPMD.additionalClassPaths": [
+    "/AN-ABSOLUTE-SHARED-PATH/classpath/*"
+  ],
+  "apexPMD.runOnFileOpen": true,
+  "apexPMD.runOnFileSave": true,
+  "apexPMD.runOnFileChange": false
+}
+```
+
+
 # vscode Apex Pmd
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/chuckjonas.apex-pmd) ![Visual Studio Marketplace Installs - Azure DevOps Extension](https://img.shields.io/visual-studio-marketplace/azure-devops/installs/total/chuckjonas.apex-pmd)](https://marketplace.visualstudio.com/items?itemName=chuckjonas.apex-pmd)
